@@ -1,0 +1,628 @@
+﻿@charset "UTF-8";
+
+/** Base **/
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #20a2a8;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+#map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    margin-bottom: .5em;
+    -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+#fr {
+    float: right;
+    padding-right: 1.8em;
+}
+
+.chosen {
+    text-decoration: underline;
+}
+
+.mobile-bar img {
+    display: block;
+    max-width: 6.1em;
+    padding-top: 1.12em;
+    margin-left: 4.5em;
+}
+
+.results {
+    background-color: #fff;
+}
+
+.results p {
+    color: #bcbcbc;
+    font-size: 1em;
+    padding-left: 1.em;
+    padding: .5em;
+    font-weight: 600;
+}
+
+.black {
+    color: black;
+    font-weight: 500;
+}
+
+.red {
+    padding-left: 1em;
+    font-size: .85em;
+    color: #d02020;
+}
+
+.white {
+    font-size: 1.4em;
+    color: white;
+}
+
+.green {
+    padding-left: 1em;
+    font-size: .85em;
+    color: #20a854;
+}
+
+#scrolling {
+    /* Carousel Frame */
+    overflow: hidden;
+}
+
+#scrolling ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+#scrolling li {
+    float: left;
+}
+
+#ff1 {
+    background-image: url(img/burgershack.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    padding-top: 5em;
+    color: white;
+    font-size: 1.2em;
+}
+
+#ff2 {
+    background-image: url(img/byenspita.png);
+    background-position: bottom;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5em;
+    color: white;
+    font-size: 1.2em;
+}
+
+
+#ff3 {
+    background-image: url(img/sharwarmabar.jpg);
+    background-position: left;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5em;
+    color: white;
+    font-size: 1.2em;
+}
+
+#ff4 {
+    background-image: url(img/streetfood.png);
+    background-position: left;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5em;
+    color: white;
+    font-size: 1.2em;
+}
+
+#ff5 {
+    background-image: url(img/kowloon.png);
+    background-position: left;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5em;
+    color: white;
+    font-size: 1.2em;
+}
+
+#ff6 {
+    background-image: url(img/hotdog.png);
+    background-position: left;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5em;
+    color: white;
+    font-size: 1.2em;
+}
+
+#foood {
+    padding: 50px;
+    display: none;
+}
+
+#food {
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+#sog#food:active {
+    text-decoration: none;
+}
+
+#sog#drinks:active {
+    text-decoration: none;
+}
+
+#sog#coffee:active {
+    text-decoration: none;
+}
+
+#sog#nightlife:active {
+    text-decoration: none;
+}
+
+@keyframes fade {
+
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#drinkss {
+    padding: 50px;
+    display: none;
+}
+
+#drinks {
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1250ms;
+    opacity: 0;
+}
+
+#nightt {
+    padding: 50px;
+    display: none;
+}
+
+#night {
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1500ms;
+    opacity: 0;
+}
+
+#shoppingg {
+    padding: 50px;
+    display: none;
+}
+
+#shopping {
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1750ms;
+    opacity: 0;
+}
+
+#sightt {
+    padding: 50px;
+    display: none;
+}
+
+#sight {
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2000ms;
+    opacity: 0;
+}
+
+#hangoutss {
+    padding: 50px;
+    display: none;
+}
+
+#hangouts {
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2250ms;
+    opacity: 0;
+}
+
+#welll {
+    padding: 50px;
+    display: none;
+}
+
+#well {
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2500ms;
+    opacity: 0;
+}
+
+#sportt {
+    padding: 50px;
+    display: none;
+}
+
+#sport {
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2750ms;
+    opacity: 0;
+}
+
+#artt {
+    padding: 50px;
+    display: none;
+}
+
+#art {
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    opacity: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+li {
+    text-align: left;
+    text-decoration: none;
+}
+
+#sog li {
+    text-align: center;
+    color: aliceblue;
+    font-size: 2.2em;
+    font-weight: 700;
+    line-height: 2.3em;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: .07em;
+    text-decoration: none;
+}
+
+.subm {
+    font-size: .5em;
+}
+
+#sog .subm li {
+    margin-top: -2em;
+    line-height: 2.9em;
+    text-decoration: none;
+}
+
+h1 {
+    color: #ffb100;
+    font-size: 1.23em;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: .1em;
+    animation-name: hmm;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+}
+
+#econ {
+    color: grey;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: .5em;
+}
+
+
+
+@keyframes hmm {
+    0% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+
+    85% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+p {
+    line-height: 1.4;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+strong {
+    color: #274681;
+}
+
+::-moz-selection {
+    background-color: #141e2f;
+    color: white;
+}
+
+::selection {
+    background-color: #141e2f;
+    color: white;
+}
+
+/** Mobile Bar **/
+
+.toggle-nav {
+    display: none;
+}
+
+.mobile-bar {
+    width: 100%;
+    height: 64px;
+    background-color: #fafafa;
+    -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.mobile-bar ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.mobile-bar li {
+    font-size: .8em;
+    padding: .5em;
+    margin-top: -.4em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .015em;
+}
+
+.mobile-bar h4 {
+    color: #20a2a8;
+    font-size: 1.56em;
+    font-weight: 500;
+    float: left;
+    padding: .49em;
+    margin-left: 1em;
+}
+
+.mobile-bar label {
+    position: fixed;
+    top: 0;
+    left: 10px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 500ms ease;
+    transition: -webkit-transform 500ms ease;
+    transition: transform 500ms ease;
+    transition: transform 500ms ease, -webkit-transform 500ms ease;
+}
+
+.mobile-bar label:after {
+    content: "\2630";
+    font-size: 2em;
+    color: #1aa3ad;
+    line-height: 60px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: color 500ms ease;
+    transition: color 500ms ease;
+}
+
+/** Slide-Out Effect **/
+
+.toggle-nav:checked ~ .container {
+    /** when the checkbox is checked the container slide-out **/
+    -webkit-transform: translateX(70%);
+    transform: translateX(70%);
+    ½ -webkit-transform: translate3d(70%, 0, 0);
+    transform: translate3d(70%, 0, 0);
+}
+
+/** Label Effect (Menu Icon) **/
+
+.toggle-nav:checked + .mobile-bar label {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.toggle-nav:checked + .mobile-bar label:after {
+    color: #f9bb12;
+}
+
+/** Container **/
+
+.container {
+    position: relative;
+    -webkit-transition: -webkit-transform 500ms ease;
+    transition: -webkit-transform 500ms ease;
+    transition: transform 500ms ease;
+    transition: transform 500ms ease, -webkit-transform 500ms ease;
+}
+
+/** Header **/
+
+.header {
+    position: fixed;
+    left: -70%;
+    max-width: 470px;
+    width: 70%;
+    height: 100%;
+    background-color: #e6e6e6;
+    padding-top: 4em;
+}
+
+.header ul {
+    text-align: left;
+    font-size: 1.4em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.header a {
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    color: #1aa3ad;
+    -webkit-transition: background-color 300ms;
+    transition: background-color 300ms;
+}
+
+.header a:active {
+    background-color: #141e2f;
+}
+
+#headerz {
+    padding: 1.3em;
+}
+
+/** Content **/
+
+.content {
+    padding: .4em;
+    margin: 0 auto;
+    padding-top: 4.5em;
+}
+
+.content h1 {
+    padding: 20px 0;
+}
+
+/** Footer **/
+
+.footer {
+    background-color: #000;
+    padding: 5px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.footer a {
+    color: #9C27B0;
+    font-weight: 700;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/** Viewport >= 730px **/
+
+@media (min-width: 1930px) {
+
+    .mobile-bar {
+        display: none;
+    }
+
+    .toggle-nav:checked ~ .container {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    .container {
+        -webkit-transition: none;
+        transition: none;
+    }
+
+    .header {
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .header ul {
+        font-size: 1.1em;
+    }
+
+    .header li,
+    .header a {
+        display: inline-block;
+    }
+
+    .header li {
+        margin-right: -6px;
+        /** fix the inline-block margin gap **/
+    }
+
+    .header a {
+        padding: 10px 45px;
+        border-bottom: none;
+    }
+
+    .header a:hover {
+        background-color: #274681;
+    }
+
+    .content p {
+        padding-bottom: 10px;
+    }
+}

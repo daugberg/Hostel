@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Only Mobile Push Menu Demo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+  	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+    <script>
+        $(document).ready(function() {
+            $("#food").click(function() {
+                $("#foood").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function() {
+            $("#drinks").click(function() {
+                $("#drinkss").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function() {
+            $("#night").click(function() {
+                $("#nightt").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function() {
+            $("#shopping").click(function() {
+                $("#shoppingg").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function() {
+            $("#sight").click(function() {
+                $("#sightt").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function() {
+            $("#hangouts").click(function() {
+                $("#hangoutss").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function() {
+            $("#well").click(function() {
+                $("#welll").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function() {
+            $("#sport").click(function() {
+                $("#sportt").slideToggle("slow");
+            });
+        });
+
+        $(document).ready(function() {
+            $("#art").click(function() {
+                $("#artt").slideToggle("slow");
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <!-- Mobile Bar -->
+    <input type="checkbox" class="toggle-nav" id="toggle-nav">
+    <div class="mobile-bar">
+        <label for="toggle-nav"></label>
+        <img src="img/Danhostel_Aarhuscity_blaa_web.png">
+    </div>
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <nav>
+                <ul>
+                    <li id="econ"><a href="#">E-Concierge</a></li>
+                    <li><a href="index.html">City guide</a></li>
+                    <li><a href="#">Find back home</a></li>
+                    <li><a href="#">Order a Taxi</a></li>
+                    <li><a href="#">Order wake-up</a></li>
+                    <li><a href="#">Reception</a></li>
+                    <li><a href="#">Hallo Café</a></li>
+                    <li><a href="#">About this app</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Container -->
+        <section class="content">
+            <div id="headerz">
+                <h1>What are you looking for?</h1>
+            </div>
+            <ul id="sog">
+                <li id="food">Food</li>
+                <div class="subm">
+                    <li id="foood">
+                        <a href="fastfood.html">All</a><br>
+                        <a href="fastfood.html">Sweets & Snacks</a><br>
+                        <a href="fastfood.html">Breakfast</a><br>
+                        <a href="fastfood.html">Lunch</a><br>
+                        <a href="fastfood.html">Fast Food</a><br>
+                        <a href="#">Casual dining</a><br>
+                        <a href="#">Fine dining</a></li>
+                </div>
+                <li id="drinks">Drinks</li>
+                <div class="subm">
+                    <li id="drinkss">
+                        <a href="#">All</a><br>
+                        <a href="#">Coffee</a><br>
+                        <a href="#">Juice & Smoothies</a><br>
+                        <a href="#">Cocktails</a> <br>
+                        <a href="#">Wine</a><br>
+                        <a href="#">Beer</a><br></li>
+                </div>
+                <li id="night">Nightlife</li>
+                <div class="subm">
+                    <li id="nightt"><a href="#">All</a>
+                        <br>
+                        <a href="#">Pubs</a><br>
+                        <a href="#">Bars</a> <br>
+                        <a href="#">Night clubs</a><br>
+                        <a href="#">Live music</a><br></li>
+                </div>
+                <li id="shopping">Shopping</li>
+                <div class="subm">
+                    <li id="shoppingg"><a href="#">All</a>
+                        <br>
+                        <a href="#">Womens fashion</a> <br>
+                        <a href="#">Mens fashion</a><br>
+                        <a href="#">Kids fashion</a><br>
+                        <a href="#">Jewelry & watches</a><br>
+                        <a href="#">Electronics</a></li>
+                </div>
+                <li id="sight">Sightseeing</li>
+                <div class="subm">
+                    <li id="sightt"><a href="#">All</a>
+                        <br> <a href="#">Amusement</a><br>
+                        <a href="#">Architecture</a><br>
+                        <a href="#">Museums</a><br>
+                        <a href="#">History</a><br></li>
+                </div>
+                <li id="hangouts">Hang outs</li>
+                <div class="subm">
+                    <li id="hangoutss"><a href="#">All</a>
+                        <br>
+                        <a href="#">Secluded</a><br>
+                        <a href="#">Crowded</a><br>
+                        <a href="#">Nature</a><br>
+                        <a href="#">Exclusive</a></li>
+                </div>
+
+                <li id="well">Wellness</li>
+                <div class="subm">
+                    <li id="welll"><a href="#">All</a>
+                        <br>
+                        <a href="#">Hair Salons</a><br>
+                        <a href="#">Nail Salons</a><br>
+                        <a href="#">Feet Salons</a><br>
+                        <a href="#">Skin care</a><br>
+                        <a href="#">Massage</a><br>
+                        <a href="#">Kiropractor</a><br>
+                        <a href="#">Pharmacy</a><br>
+                        <a href="#">Fitness</a></li>
+                </div>
+                <li id="sport">Sport</li>
+                <div class="subm">
+                    <li id="sportt"><a href="#">Sports on TV</a><br>
+                        <a href="#">Sports bars</a> <br>
+                        <a href="#">Live sports</a><br>
+                        <a href="#">Play yourself</a></li>
+                </div>
+                <li id="art">Art</li>
+                <div class="subm">
+                    <li id="artt"><a href="#">All</a>
+                        <br>
+                        <a href="#">Museums</a> <br>
+                        <a href="#">Galleries</a></li>
+                </div>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>

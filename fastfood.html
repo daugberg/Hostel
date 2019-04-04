@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Only Mobile Push Menu Demo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+  	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+    <style>
+        body {
+            background-color: #d0d0d0;
+        }
+
+        .mobile-bar {
+            padding: .2em;
+            height: 4em;
+        }
+
+        .mobile-bar img {
+            float: left;
+            width: 1.2em;
+            margin-left: 1.7em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Mobile Bar -->
+    <div class="mobile-bar">
+        <a href="index.html"><img src="img/arrow.png"></a>
+        <h4>Fast food</h4>
+        <div id="fr">
+            <a href="fastfoodmap.html"><img src="img/map.png"></a>
+            <a href="#"><img src="img/search.png"></a>
+        </div>
+    </div>
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <nav>
+                <ul>
+                    <li id="econ"><a href="#">E-Concierge</a></li>
+                    <li><a href="index.html">City guide</a></li>
+                    <li><a href="#">Tour roulette</a></li>
+                    <li><a href="#">Socialize</a></li>
+                    <li><a href="#">Find back home</a></li>
+                    <li><a href="#">Taxi</a></li>
+                    <li><a href="#">Wake-up</a></li>
+                    <li><a href="#">Reception</a></li>
+                    <li><a href="#">Room key</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Container -->
+        <article class="content">
+            <a href="burgershack.html">
+                <section class="results">
+                    <div id="ff1">
+                        <p><span class="white">The Burger Shack</span></p>
+                    </div>
+                    <p><span class="black">Best American burgers in Aarhus</span></p>
+                    <p>0.14 km
+                        <span class="green">OPEN UNTIL 20:30</span>
+                    </p>
+                </section>
+            </a>
+            <section class="results">
+                <div id="ff2">
+                    <p><span class="white">Byens Pita</span></p>
+                </div>
+                <p><span class="black">Best pitas in Aarhus</span></p>
+                <p>1.55 km
+                    <span class="green">OPEN UNTIL 22:00</span>
+                </p>
+            </section>
+            <section class="results">
+                <div id="ff3">
+                    <p><span class="white">Shawarma Bar</span></p>
+                </div>
+                <p><span class="black">Sharwarma in Aarhus</span></p>
+                <p>3.26 km
+                    <span class="green">OPEN UNTIL 23:00</span>
+                </p>
+            </section>
+            <section class="results">
+                <div id="ff4">
+                    <p><span class="white">Aarhus Streetfood</span></p>
+                </div>
+                <p><span class="black">50 different fast-food joints</span></p>
+                <p>3.42 km
+                    <span class="green">OPEN UNTIL 22:00</span>
+                </p>
+            </section>
+            <section class="results">
+                <div id="ff5">
+                    <p><span class="white">Kowloon</span></p>
+                </div>
+                <p><span class="black">Best china box and valuable asian food</span></p>
+                <p>3.56 km
+                    <span class="green">OPEN UNTIL 22:00</span>
+                </p>
+            </section>
+            <section class="results">
+                <div id="ff6">
+                    <p><span class="white">Børnenes kontor</span></p>
+                </div>
+                <p><span class="black">Restored "Pølsevogn" with original Hot Dogs</span></p>
+                <p>4.61 km
+                    <span class="red">CLOSED (OPEN 10:00 - 17:00)</span>
+                </p>
+            </section>
+        </article>
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('#ff1', {
+            delay: 450,
+            duration: 1000,
+            reset: true
+        });
+
+    </script>
+</body>
+
+</html>
